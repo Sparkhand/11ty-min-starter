@@ -4,8 +4,8 @@
   "description": "A minimal Eleventy (11ty) SSG starter project featuring SASS support.",
   "main": "",
   "scripts": {
+    "start": "npm run sass:watch & npm run 11ty:serve",
     "build": "npm run sass:build & npm run 11ty:build",
-    "start": "npm run 11ty:serve & npm run sass:watch",
     "11ty:serve": "npx @11ty/eleventy --serve",
     "11ty:build": "npx @11ty/eleventy",
     "sass:watch": "node-sass --watch --output-style compressed src/assets/_scss/style.scss src/assets/css/style.min.css",
