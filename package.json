@@ -8,8 +8,8 @@
     "build": "npm run sass:build & npm run 11ty:build",
     "11ty:serve": "npx @11ty/eleventy --serve",
     "11ty:build": "npx @11ty/eleventy",
-    "sass:watch": "node-sass --watch --output-style compressed src/assets/_scss/style.scss src/assets/css/style.min.css",
-    "sass:build": "node-sass --output-style compressed src/assets/_scss/style.scss src/assets/css/style.min.css"
+    "sass:watch": "npx sass --no-source-map --watch --style=compressed src/assets/_scss/style.scss src/assets/css/style.min.css",
+    "sass:build": "npx sass --no-source-map --style=compressed src/assets/_scss/style.scss src/assets/css/style.min.css"
   },
   "keywords": [
     "eleventy",
@@ -25,6 +25,6 @@
   "license": "ISC",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "node-sass": "^8.0.0"
+    "sass": "^1.62.1"
   }
 }

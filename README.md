@@ -6,15 +6,13 @@ A minimal [Eleventy (11ty)](https://www.11ty.dev/) SSG starter project featuring
 
 ```sh
 npm install
-```
 
-```sh
 npm start
 ```
 
 ## What's included 🔋
 
 - Basic directory structure for kickstarting your project;
-- SASS support through `node-sass`;
+- SASS support through `sass` npm package;
 - Build/Start/SASS scripts included;
     - run `npm run` to view all available scripts;
